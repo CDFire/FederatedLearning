@@ -5,109 +5,133 @@
   <meta name="google-site-verification" content="MkwtrvT60O7yOBl4JlQn0E5SeSjz16QAOx0TF3f7_wM" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Cole Feuer | Federated Aggregation Research</title>
-  <meta name="description" content="Cole Feuer's research on federated learning, comparing aggregation methods like FedAvg, FedLAMA, and FedDist across CNN, MLP, and Transformer models." />
-  <meta name="keywords" content="Cole Feuer, federated learning, FedAvg, FedLAMA, FedDist, machine learning, MIMIC-III, CIFAR-10, Sentiment140, aggregation methods" />
-  <meta name="author" content="Cole Feuer" />
+  <!-- Primary SEO Tags -->
+  <title>Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime</title>
+  <meta name="description" content="Cole Feuer’s research on temporally consistent unpaired anime style transfer. Learn about the 8‑channel GAN workflow, results gallery, code, and publications." />
+  <meta name="keywords" content="Cole Feuer, unpaired style transfer, anime GAN, 3D to 2D, temporal consistency, multi-channel inputs" />
+  <meta name="author" content="Cole Feuer" />
   <meta name="robots" content="index, follow" />
-  <link rel="canonical" href="https://thravt.github.io/FederatedAggregation/" />
+  <link rel="canonical" href="https://cdfire.github.io/UnpairedStyleTransfer/" />
+  <link rel="author" href="https://orcid.org/0000-0002-XXXX-XXXX" />
+  <meta property="og:site_name" content="Cole Feuer Portfolio" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Cole Feuer | Unpaired Style Transfer from 3D Renders to Anime" />
+  <meta property="og:description" content="Explore Cole Feuer’s novel GAN-based pipeline for unpaired 3D-to-anime style transfer with temporal coherence. View code, results, and future directions." />
+  <meta property="og:url" content="https://cdfire.github.io/UnpairedStyleTransfer/" />
+  <meta property="og:image" content="https://cdfire.github.io/UnpairedStyleTransfer/images/cover.png" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <!-- Open Graph for better previews on social media -->
-  <meta property="og:title" content="Cole Feuer | Federated Aggregation Research" />
-  <meta property="og:description" content="Explore Cole Feuer's research comparing federated aggregation methods across model types and data modalities." />
-  <meta property="og:url" content="https://thravt.github.io/FederatedAggregation/" />
-  <meta property="og:type" content="website" />
-
-  <!-- Schema.org Person JSON-LD -->
+  <!-- BreadcrumbList Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Cole Feuer",
-    "url": "https://thravt.github.io/FederatedAggregation/",
-    "sameAs": [
-      "https://github.com/CDFire",
-      "https://linkedin.com/in/colefeuer",
-      "mailto:coledfeuer@gmail.com"
-    ],
-    "jobTitle": "Machine Learning Researcher",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "Rensselaer Polytechnic Institute"
-    }
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Linkedin", "item": "https://www.linkedin.com/in/cole-feuer-6a4551165/"},
+      {"@type": "ListItem", "position": 2, "name": "Unpaired Style Transfer", "item": "https://cdfire.github.io/UnpairedStyleTransfer/"}
+    ]
+  }
+  </script>
+
+  <!-- Person & CreativeWork Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "#coleFeuer",
+        "name": "Cole Feuer",
+        "url": "https://www.linkedin.com/in/cole-feuer-6a4551165/",
+        "sameAs": [
+          "https://github.com/CDFire",
+        ],
+        "jobTitle": "Machine Learning Researcher",
+        "affiliation": {"@type":"CollegeOrUniversity","name":"Rensselaer Polytechnic Institute"}
+      },
+      {
+        "@type": "CreativeWork",
+        "headline": "Unpaired Style Transfer from 3D Renders to Anime",
+        "name": "Unpaired Style Transfer",
+        "author": {"@id": "#coleFeuer"},
+        "datePublished": "2025-04-15",
+        "url": "https://cdfire.github.io/UnpairedStyleTransfer/",
+        "description": "A GAN-based pipeline for converting 3D animation frames into stable, high-fidelity anime style using multi-channel inputs.",
+        "image": "https://cdfire.github.io/UnpairedStyleTransfer/images/gallery/1_after.png",
+        "keywords": ["unpaired style transfer","anime GAN","temporal consistency"],
+        "publisher": {"@type":"Organization","name":"Cole Feuer Portfolio"}
+      }
+    ]
   }
   </script>
 
   <style>
-    body {
-      font-family: system-ui, sans-serif;
-      margin: 0;
-      padding: 2rem;
-      max-width: 900px;
-      line-height: 1.6;
-      background: #f8f9fa;
-      color: #333;
-    }
-    h1 {
-      font-size: 2rem;
-      margin-bottom: 0.5rem;
-    }
-    h2 {
-      margin-top: 2rem;
-      color: #444;
-    }
-    a {
-      color: #007acc;
-    }
-    section {
-      margin-top: 1.5rem;
-    }
+    /* Responsive, accessible styling */
+    body { font-family: system-ui, sans-serif; margin:0; padding:1rem; max-width:960px; background:#fafafa; color:#212121; line-height:1.6; }
+    nav.breadcrumb { font-size:.9em; margin-bottom:1rem; }
+    nav.breadcrumb a { color:#007acc; text-decoration:none; }
+    header h1 { font-size:2.5rem; margin:0; }
+    header p.lead { font-size:1.1rem; color:#555; }
+    section { margin-top:2rem; }
+    h2 { font-size:1.8rem; color:#333; border-bottom:2px solid #eaeaea; padding-bottom:.3rem; }
+    .gallery img { max-width:100%; border-radius:4px; margin:1rem 0; }
+    footer { margin-top:3rem; font-size:.9rem; color:#555; }
   </style>
 </head>
 <body>
-  <h1>Federated Aggregation Research</h1>
-  <p><strong>Primary Author:</strong> Cole Feuer<br>
-     <strong>Co-authors:</strong> Tyler Thraves, Sahithi Kamireddy<br>
-     <strong>Institution:</strong> Rensselaer Polytechnic Institute<br>
-     <strong>Email:</strong> <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a></p>
+  <nav class="breadcrumb">
+    <a href="https://colefeuer.com/">Home</a> &raquo;
+    <a href="https://colefeuer.com/projects/">Projects</a> &raquo;
+    <span>Unpaired Style Transfer</span>
+  </nav>
 
-  <section>
-    <h2>Project Overview</h2>
-    <p>This research project explores the performance of different federated aggregation methods—FedAvg, FedLAMA, and FedDist—on a variety of deep learning architectures and datasets. It aims to answer how these methods perform across vision, tabular, and text domains using a consistent evaluation pipeline.</p>
+  <header>
+    <h1>Cole Feuer’s Unpaired Style Transfer</h1>
+    <p class="lead">Transforming 3D-rendered animation frames into temporally coherent anime style using a novel GAN pipeline.</p>
+  </header>
+
+  <section id="about">
+    <h2>About the Project</h2>
+    <p>This work from <strong>Cole Feuer</strong> presents a two-stage, unpaired approach: first a perceptual pretraining phase on anime datasets; then a CycleGAN-based domain adaptation using 8-channel inputs (RGB, depth, edges, blurred prior frames) to enforce visual and temporal fidelity without paired data. Ideal for studios seeking automated stylization at scale.</p>
   </section>
 
-  <section>
-    <h2>Technical Summary</h2>
+  <section id="features">
+    <h2>Key Technical Features</h2>
     <ul>
-      <li><strong>FedAvg:</strong> Standard model averaging based on local client weights</li>
-      <li><strong>FedLAMA:</strong> Layer-wise adaptive aggregation that accounts for gradient variability</li>
-      <li><strong>FedDist:</strong> Output-level distillation using a public dataset for soft-label aggregation</li>
-    </ul>
-    <p>Each method was tested on:</p>
-    <ul>
-      <li><strong>CNN</strong> model on <em>CIFAR-10</em> (image classification)</li>
-      <li><strong>MLP</strong> model on <em>MIMIC-III</em> (clinical tabular data)</li>
-      <li><strong>DistilBERT</strong> on <em>Sentiment140</em> (text sentiment classification)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Repository</h2>
-    <p>Explore the full codebase and experiment results here: <a href="https://github.com/thravt/FederatedAggregation" target="_blank">https://github.com/thravt/FederatedAggregation</a></p>
-  </section>
-
-  <section>
-    <h2>Key Takeaways</h2>
-    <ul>
-      <li>FedLAMA generally achieved more stable convergence in smaller models</li>
-      <li>FedDist proved effective when a small public dataset was available for distillation</li>
-      <li>FedAvg remained competitive in simpler tasks with balanced data</li>
+      <li><strong>8-Channel Encoding:</strong> Combines scene structure (depth, edges) with motion context (prior frame) for stable outputs.</li>
+      <li><strong>GAN Adaptation:</strong> Dual discriminators with identity, adversarial, and cycle-consistency losses on unpaired data.</li>
+      <li><strong>Temporal Coherence:</strong> Minimizes frame-to-frame flicker via blurred prior-frame input and style loss.</li>
+      <li><strong>Performance:</strong> Real-time inference demo with TensorRT &amp; ONNX build.</li>
     </ul>
   </section>
 
-  <section>
+  <section id="results">
+    <h2>Results Gallery</h2>
+    <div class="gallery">
+      <img src="images/gallery/1_before.png" alt="3D render input frame by Cole Feuer" />
+      <img src="images/gallery/1_after.png" alt="Anime-style output frame by Cole Feuer" />
+      <p>Figure 1. Input vs. Output for a single frame; see full sequence in <a href="results.html">Results</a>.</p>
+    </div>
+  </section>
+
+  <section id="code">
+    <h2>Code &amp; Documentation</h2>
+    <p>View the complete implementation, training scripts, and setup instructions on GitHub:</p>
+    <p><a href="https://github.com/CDFire/UnpairedStyleTransfer" target="_blank" rel="noopener">github.com/CDFire/UnpairedStyleTransfer</a></p>
+  </section>
+
+  <section id="future">
+    <h2>Future Directions</h2>
+    <p>Planned enhancements include explicit optical-flow losses, multi-style conditional transfer, and user-driven style parameter controls. Feedback and collaborations welcomed.</p>
+  </section>
+
+  <section id="contact">
     <h2>Contact</h2>
-    <p>For inquiries or collaboration opportunities, email <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>.</p>
+    <p>Questions or collaborations? Reach out to <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a> or connect on <a href="https://linkedin.com/in/colefeuer" target="_blank" rel="noopener">LinkedIn</a>.</p>
   </section>
+
+  <footer>
+    <p>&copy; <script>document.write(new Date().getFullYear());</script> Cole Feuer. <a href="https://colefeuer.com/">colefeuer.com</a></p>
+  </footer>
 </body>
 </html>
