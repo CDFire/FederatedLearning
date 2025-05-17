@@ -11,8 +11,6 @@
   <meta name="keywords" content="Cole Feuer, Federated Learning, FedAvg, FedLAMA, FedDist, RPI, CIFAR-10, MIMIC-III, Sentiment140, Machine Learning Research" />
   <meta name="author" content="Cole Feuer" />
   <meta name="robots" content="index, follow" />
-
-  <!-- Restored canonical -->
   <link rel="canonical" href="https://thravt.github.io/FederatedAggregation/" />
 
   <!-- Open Graph -->
@@ -20,7 +18,6 @@
   <meta property="og:description" content="Empirical analysis of federated aggregation methods (FedAvg, FedLAMA, FedDist) across vision, tabular & text domains by Cole Feuer, RPI." />
   <meta property="og:url" content="https://thravt.github.io/FederatedAggregation/" />
   <meta property="og:type" content="website" />
-  <!-- Optionally add your own headshot or project diagram -->
   <meta property="og:image" content="https://thravt.github.io/FederatedAggregation/og-image.png" />
 
   <!-- Schema.org JSON-LD: Person + WebPage -->
@@ -49,71 +46,146 @@
         "name": "Cole Feuer – Federated Aggregation Research",
         "description": "Empirical study of FedAvg, FedLAMA & FedDist across CNN, MLP & DistilBERT models on multiple datasets.",
         "inLanguage": "en-US",
-        "author": {
-          "@id": "https://thravt.github.io/FederatedAggregation/#person"
-        }
+        "author": { "@id": "https://thravt.github.io/FederatedAggregation/#person" }
       }
     ]
   }
   </script>
+
+  <style>
+    /* Layout and Typography */
+    body {
+      margin: 0;
+      background-color: #eef1f5;
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      color: #333;
+      line-height: 1.6;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 2rem;
+      background-color: #fff;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    header, footer {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-family: Georgia, serif;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      color: #20232a;
+    }
+    h2 {
+      font-family: Georgia, serif;
+      font-size: 1.75rem;
+      margin-top: 2rem;
+      color: #20232a;
+      border-bottom: 2px solid #ececec;
+      padding-bottom: 0.25rem;
+    }
+    nav {
+      margin: 1rem 0;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 1rem;
+      color: #0073e6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    p, ul {
+      margin: 1rem 0;
+    }
+    ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #0073e6;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer p {
+      font-size: 0.875rem;
+      color: #666;
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <h1>Cole Feuer – Federated Aggregation Research</h1>
-    <p class="byline">
-      Master’s research at Rensselaer Polytechnic Institute<br>
-      <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>
-    </p>
-  </header>
-
-  <main>
-    <section id="overview">
-      <h2>Project Overview</h2>
+  <div class="container">
+    <header>
+      <h1>Cole Feuer<br><small style="font-size:1rem; color:#555;">Federated Aggregation Research</small></h1>
       <p>
-        I’m <strong>Cole Feuer</strong>, a master’s student in Computer Science at RPI. This project
-        empirically compares three federated aggregation methods—<strong>FedAvg</strong>,
-        <strong>FedLAMA</strong>, and <strong>FedDist</strong>—across vision,
-        tabular, and text domains using a unified evaluation pipeline.
+        Master’s research at <strong>Rensselaer Polytechnic Institute</strong><br>
+        <a href="mailto:coledfeuer@gmail.com">coledfeuer@gmail.com</a>
       </p>
-    </section>
+    </header>
 
-    <section id="technical-summary">
-      <h2>Technical Summary</h2>
-      <ul>
-        <li><strong>FedAvg:</strong> Standard weight‐averaging of client updates.</li>
-        <li><strong>FedLAMA:</strong> Layer‐wise adaptive aggregation accounting for gradient variability.</li>
-        <li><strong>FedDist:</strong> Soft‐label distillation via a small public dataset.</li>
-      </ul>
-      <p>Each method was evaluated on:</p>
-      <ul>
-        <li><strong>CNN</strong> on <em>CIFAR-10</em> (image classification)</li>
-        <li><strong>MLP</strong> on <em>MIMIC-III</em> (clinical tabular data)</li>
-        <li><strong>DistilBERT</strong> on <em>Sentiment140</em> (text sentiment)</li>
-      </ul>
-    </section>
+    <nav>
+      <a href="#overview">Overview</a>
+      <a href="#technical-summary">Summary</a>
+      <a href="#repository">Code</a>
+      <a href="#key-findings">Findings</a>
+    </nav>
 
-    <section id="repository">
-      <h2>Code & Results</h2>
-      <p>
-        Full codebase, notebooks, and detailed results are available on GitHub:
-        <a href="https://github.com/CDFire/FederatedLearning" target="_blank" rel="noopener">
-          github.com/CDFire/FederatedLearning
-        </a>
+    <main>
+      <section id="overview">
+        <h2>Project Overview</h2>
+        <p>
+          I am <strong>Cole Feuer</strong>, a master’s student in Computer Science at RPI. This project
+          empirically compares three federated aggregation methods—<strong>FedAvg</strong>,
+          <strong>FedLAMA</strong>, and <strong>FedDist</strong>—across vision, tabular, and text domains
+          using a unified evaluation pipeline.
+        </p>
+      </section>
+
+      <section id="technical-summary">
+        <h2>Technical Summary</h2>
+        <ul>
+          <li><strong>FedAvg:</strong> Standard weight‑averaging of client updates.</li>
+          <li><strong>FedLAMA:</strong> Layer‑wise adaptive aggregation accounting for gradient variability.</li>
+          <li><strong>FedDist:</strong> Soft‑label distillation via a small public dataset.</li>
+        </ul>
+        <p>Each method was evaluated on:</p>
+        <ul>
+          <li><strong>CNN</strong> on <em>CIFAR‑10</em> (image classification)</li>
+          <li><strong>MLP</strong> on <em>MIMIC‑III</em> (clinical tabular data)</li>
+          <li><strong>DistilBERT</strong> on <em>Sentiment140</em> (text sentiment)</li>
+        </ul>
+      </section>
+
+      <section id="repository">
+        <h2>Code & Results</h2>
+        <p>
+          Full codebase, notebooks, and detailed results are available on
+          <a href="https://github.com/CDFire/FederatedLearning" target="_blank" rel="noopener">
+            GitHub</a>.
+        </p>
+      </section>
+
+      <section id="key-findings">
+        <h2>Key Findings</h2>
+        <ul>
+          <li><strong>FedLAMA</strong> yielded more stable convergence in smaller‑scale models.</li>
+          <li><strong>FedDist</strong> excelled when a modest public dataset was available for distillation.</li>
+          <li><strong>FedAvg</strong> remained highly competitive on balanced‑data tasks.</li>
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2025 Cole Feuer | 
+        <a href="https://www.linkedin.com/in/cole-feuer-6a4551165/" target="_blank" rel="noopener">LinkedIn</a> • 
+        <a href="https://github.com/CDFire" target="_blank" rel="noopener">GitHub</a>
       </p>
-    </section>
-
-    <section id="key-findings">
-      <h2>Key Findings</h2>
-      <ul>
-        <li><strong>FedLAMA</strong> yielded more stable convergence in smaller‐scale models.</li>
-        <li><strong>FedDist</strong> excelled when a modest public dataset was available for distillation.</li>
-        <li><strong>FedAvg</strong> remained highly competitive on balanced–data tasks.</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Cole Feuer | <a href="https://www.linkedin.com/in/cole-feuer-6a4551165/" target="_blank" rel="noopener">LinkedIn</a> • <a href="https://github.com/CDFire" target="_blank" rel="noopener">GitHub</a></p>
-  </footer>
+    </footer>
+  </div>
 </body>
 </html>
